@@ -1,7 +1,9 @@
-<nav class="menu-nav">
+<nav class="menu">
     <h3>Menu</h3>
-    <a [routerLink]="['/introduccion']" class="nav-item">Introducción</a>
-    <a [routerLink]="['/introduccion']" class="nav-item">Objetivos</a>
-    <a [routerLink]="['/introduccion']" class="nav-item">Contenido</a>
-    <a [routerLink]="['/introduccion']" class="nav-item">Actividad</a>
+    <div class="menu-nav">
+        <a [routerLink]="['/introduccion']" routerLinkActive="active" class="nav-item">Introducción</a>
+        <a [routerLink]="['/objetivos']" routerLinkActive="active" class="nav-item">Objetivos</a>
+        <a [routerLink]="['/contenido']" routerLinkActive="active" class="nav-item">Contenido</a>
+        <a [routerLink]="['/actividad']" routerLinkActive="active" class="nav-item">Actividad</a>
+    </div>
 </nav>
