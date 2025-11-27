@@ -1,0 +1,10 @@
+.answer {
+    font-weight: bold;
+    margin-top: 1rem;
+    &.correct-answer {
+        color: #0372b8;
+    }
+    &.wrong-answer {
+        color: #ff0000;
+    }
+}

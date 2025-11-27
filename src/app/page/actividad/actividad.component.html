@@ -9,11 +9,13 @@
                     <app-choice-question [question]="question" (selectedOption)="onOptionSelected($event)"></app-choice-question>
                 }
             </div>
-            <p>
-                @if (selected) {
-                    {{ isCorrect ? "¡Correcto! 🎉" : "Incorrecto, intenta otra vez." }}
+            @if (selected) {
+                @if (isCorrect) {
+                    <p class="answer correct-answer">¡Correcto! 🎉</p>
+                } @else {
+                    <p class="answer wrong-answer">Incorrecto, intenta otra vez.</p>
                 }
-            </p>
+            }
         </div>
     </div>
 </div>
