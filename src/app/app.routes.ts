@@ -21,5 +21,5 @@ export const routes: Routes = [
         path: 'actividad',
         loadComponent: () => import('./page/actividad/actividad.component').then(m => m.ActividadComponent)
     },
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '', redirectTo: '/introduccion', pathMatch: 'full' },
 ];
