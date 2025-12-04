@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuNavComponent } from '@components/menu-nav/menu-nav.component';
 import { ChoiceQuestionComponent } from '@components/choice-question/choice-question.component';
-import { style } from '@angular/animations';
 
 @Component({
   selector: 'app-actividad',

@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { APP_ROUTES } from '@constants/routes.constants';
 
 @Component({
   selector: 'app-paginator',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 export class PaginatorComponent {
   route = inject(Router);
 
-  routes = ["/introduccion", "/objetivos", "/contenido", "/actividad"];
+  routes = APP_ROUTES;
 
   prev() {
     const urlActually = this.route.url;
