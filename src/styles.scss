@@ -20,6 +20,13 @@ h1, h2, h3, h4, p {
     margin-top: 0;
 }
 
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+
 .the-content {
     border: 1px solid #a0a0a0;
     padding: 2rem;

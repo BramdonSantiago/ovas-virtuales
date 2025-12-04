@@ -11,6 +11,8 @@ export class ChoiceQuestionComponent {
 
   @Output() selectedOption = new EventEmitter<number>();
 
+  isSelected: boolean = false;
+
   choose() {
     this.selectedOption.emit(this.question.id);
   }
